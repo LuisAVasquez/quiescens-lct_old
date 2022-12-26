@@ -39,8 +39,12 @@ baseurl: "/quiescens-lct" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    #twitter: fastdotai
+    #github: fastai
+    # fixing problem introduced in:
+    # https://github.com/jekyll/minima/pull/686
+    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
+    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
 
 # Set this to true to get LaTeX math equation support
 use_math: true
